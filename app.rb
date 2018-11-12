@@ -12,8 +12,9 @@ end
   end
 
   post '/checkout' do
+    binding.pry
     session[params[:name]]
     @session = session
-    
+
   end
 end

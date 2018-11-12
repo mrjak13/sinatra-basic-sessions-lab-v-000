@@ -12,7 +12,8 @@ end
   end
 
   post '/checkout' do
+    session[params[:name]]
     @session = session
-    params
+    
   end
 end

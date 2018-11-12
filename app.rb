@@ -11,8 +11,7 @@ end
     erb :index
   end
 
-  post '/checkout' do
-    binding.pry
+  post '/checkout' do    
     session["item"] = params[:item]
     @session = session
   end

@@ -13,7 +13,7 @@ end
 
   post '/checkout' do
     binding.pry
-    session[params[:name]]
+    session["item"] = params[:item]
     @session = session
 
   end
